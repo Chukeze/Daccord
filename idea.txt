@@ -1,0 +1,13 @@
+1. Web API to mess with
+    Geolocation - get user's location
+    Speech API - speech recognition & synthesis
+    Web RTC - Real-time communication w/audio and video
+    local storage for now
+
+    google maps api - for the food/ resturant finder
+
+2.Pages idea
+    Food finder page
+    games 
+    articles
+    favorites

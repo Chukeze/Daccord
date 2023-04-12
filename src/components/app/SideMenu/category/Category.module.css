@@ -1,0 +1,43 @@
+.category {
+  background-color: rgba(44, 47, 72, 0.5);
+  height: 100%;
+
+  padding: 0 1rem;
+
+  position: relative;
+}
+.navheader {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+.navheader > h1 {
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  line-height: 1rem;
+  align-self: flex-start;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+#explore {
+  position: relative;
+  left: -12%;
+  top: -5px;
+
+  height: 42px;
+  width: 42px;
+  margin-right: 3px;
+}
+
+
+ul li a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
