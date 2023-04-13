@@ -1,4 +1,5 @@
-import CommunitiesCSS from './Communities.module.css';
+import CommunitiesCSS from './Communities.module.css'
+import CategoryCSS from '../../../category/Category.module.css'
 import {
   home,
   music,
@@ -8,37 +9,75 @@ import {
   game,
   tech,
 } from '../../../../../../assets/images/icons/icons'
-export const Communities = () => {
+export const Communities = ({chosen, filter, handleButtonClick}) => {
   return (
-    <ul>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={home} alt="" id={CommunitiesCSS.home} />
-        <a href="">Home</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={music} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Music</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={education} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Education</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={game} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Gaming</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={tech} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Science & Tech</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={entertainment} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Entertainment</a>
-      </li>
-      <li className={CommunitiesCSS.categorylist}>
-        <img src={studenthub} alt="" className={CommunitiesCSS.icon} />
-        <a href="">Student Hub</a>
-      </li>
-    </ul>
+    <>
+      <h1>Communities</h1>
+      <ul>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 0 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(0)}
+        >
+          <img src={home} alt="" id={CommunitiesCSS.home} />
+          <button>Home</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 1 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(1)}
+        >
+          <img src={music} alt="" className={CategoryCSS.icon} />
+          <button>Music</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 2 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(2)}
+        >
+          <img src={education} alt="" className={CategoryCSS.icon} />
+          <button>Education</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 3 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(3)}
+        >
+          <img src={game} alt="" className={CategoryCSS.icon} />
+          <button>Gaming</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 4 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(4)}
+        >
+          <img src={tech} alt="" className={CategoryCSS.icon} />
+          <button>Science & Tech</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 5 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(5)}
+        >
+          <img src={entertainment} alt="" className={CategoryCSS.icon} />
+          <button>Entertainment</button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 6 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => handleButtonClick(6)}
+        >
+          <img src={studenthub} alt="" className={CategoryCSS.icon} />
+          <button>Student Hub</button>
+        </li>
+      </ul>
+    </>
   )
 }

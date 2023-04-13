@@ -90,6 +90,11 @@
   list-style: none;
 }
 
+.navactions > button{
+    border: none;
+    padding: 0;
+}
+
 .icon {
   height: 40px;
   width: 40px;

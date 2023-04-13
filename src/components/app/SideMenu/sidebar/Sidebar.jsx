@@ -7,12 +7,8 @@ import {
   iconadd,
   iconexplore,
 } from '../../../../assets/images/icons/icons'
-import { useState } from 'react'
-export const Sidebar = () => {
-  const [selected, setSelected] = useState(null)
-  const handleItemClick = (index) => {
-    setSelected(index)
-  }
+
+export const Sidebar = ({handleItemClick, selected}) => {
   return (
     <article className={SidebarCSS.Sidebar}>
       <div className={SidebarCSS.logo}>
@@ -26,7 +22,7 @@ export const Sidebar = () => {
              *            A function or an element  then our explanation is just referencing that in the context of that function
              *  Goal: Add a selected class to what button gets click and then load up it's respective content in the 
              * 
-             * Code Explanation: handleItemClick function get invoked when the respective li(navaction items) is clicked and then on clicking 
+             * Code Explanation: handleItemClick and selected is being prop drilled into this sidebar child component from the sidemenu. handleItemClick function get invoked when the respective li(navaction items) is clicked and then on clicking 
              *                    inside the function it run the updating of the state. In the respective child component that is rendered when
              *                   the item is clicked, we use the selected state to conditionally render the menu items 
              * 
@@ -43,9 +39,9 @@ export const Sidebar = () => {
                 handleItemClick(0)
               }}
             >
-              <a href="">
+              <button href="">
                 <img src={logoimg1} alt="" className={SidebarCSS.icon} />
-              </a>
+              </button>
             </li>
             <li
               className={`
@@ -57,9 +53,9 @@ export const Sidebar = () => {
                 handleItemClick(1)
               }}
             >
-              <a href="">
+              <button >
                 <img src={logoimg2} alt="Food" className={SidebarCSS.icon} />
-              </a>
+              </button>
             </li>
             <li
               className={`
@@ -71,9 +67,9 @@ export const Sidebar = () => {
                 handleItemClick(2)
               }}
             >
-              <a href="">
+              <button>
                 <img src={logoimg3} alt="Activities" className={SidebarCSS.icon} />
-              </a>
+              </button>
             </li>
             <li
               className={`
@@ -85,9 +81,9 @@ export const Sidebar = () => {
                 handleItemClick(3)
               }}
             >
-              <a href="">
+              <button>
                 <img src={iconexplore} alt="Communities" className={SidebarCSS.icon} />
-              </a>
+              </button>
             </li>
             <li
               className={`
@@ -99,9 +95,9 @@ export const Sidebar = () => {
                 handleItemClick(4)
               }}
             >
-              <a href="">
+              <button >
                 <img src={iconadd} alt="" className={SidebarCSS.icon} />
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

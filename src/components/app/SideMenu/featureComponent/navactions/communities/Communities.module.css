@@ -4,34 +4,3 @@
   padding: 0;
   margin: 0;
 }
-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
-  padding: 1rem;
-  margin: 0;
-}
-
-ul .categorylist {
-  list-style: none;
-
-  width: 100%;
-  padding: 0.5rem 1rem;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
-
-  border-radius: 5px;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  column-gap: 0.5rem;
-
-  cursor: pointer;
-}
-.icon {
-  height: 24px;
-  width: 24px;
-}

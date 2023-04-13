@@ -17,6 +17,16 @@ import logoimg2 from './Group 2.png';
 import logoimg3 from './Group 3.png';
 import iconadd from './Icon Add.png';
 import iconexplore from './Icon Explore.png';
+import restaurant from './restaurant.png';
+import fastfood from './fast-food.png';
+import fastdining from './dining.png';
+import grocery from './grocery.png';
+import classicgames from './classic_games.png';
+import actiongames from './actiongames.png';
+import adventuregames from './adventure.png';
+import activities from './activities.png';
+import members from './member.png';
+import membersactivity from './activitylist.png'
 
 export {
     home,
@@ -38,4 +48,14 @@ export {
     logoimg3,
     iconadd,
     iconexplore,
+    restaurant,
+    fastfood,
+    fastdining,
+    grocery,
+    classicgames,
+    actiongames,
+    adventuregames,
+    members,
+    membersactivity,
+    activities
 }

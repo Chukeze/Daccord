@@ -1,4 +1,12 @@
 @media (min-width: 768px) {
+  .currentAction {
+    position: absolute;
+    bottom: 80px;
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(16, 32, 62, 0.5);
+    backdrop-filter: blur(25px);
+  }
   .actionbar {
     position: absolute;
     bottom: 0;

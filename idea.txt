@@ -11,3 +11,11 @@
     games 
     articles
     favorites
+
+Image Credit:
+
+Photo by Pixabay from Pexels: https://www.pexels.com/photo/board-chalk-chalkboard-conceptual-220053/
+Photo by <a href="https://unsplash.com/@marcus_wallis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcus Wallis</a> on <a href="https://unsplash.com/s/photos/rock-paper-scissors-game?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/de/@eagledig?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gautier Pfeiffer</a> on <a href="https://unsplash.com/s/photos/Land?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@juanrojas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Juan Rojas</a> on <a href="https://unsplash.com/s/photos/mexican-restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
