@@ -10,7 +10,7 @@ import {
 
 export const Sidebar = ({handleItemClick, selected}) => {
   return (
-    <article className={SidebarCSS.Sidebar}>
+    <aside className={SidebarCSS.Sidebar}>
       <div className={SidebarCSS.logo}>
         <img src={logo} alt="Daccord" />
       </div>
@@ -39,7 +39,7 @@ export const Sidebar = ({handleItemClick, selected}) => {
                 handleItemClick(0)
               }}
             >
-              <button href="">
+              <button>
                 <img src={logoimg1} alt="" className={SidebarCSS.icon} />
               </button>
             </li>
@@ -102,6 +102,6 @@ export const Sidebar = ({handleItemClick, selected}) => {
           </ul>
         </nav>
       </span>
-    </article>
+    </aside>
   )
 }

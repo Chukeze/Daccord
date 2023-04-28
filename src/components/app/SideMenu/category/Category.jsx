@@ -7,8 +7,9 @@ import { Activities } from '../featureComponent/navactions/activities/Activities
 import { Favorites } from '../featureComponent/navactions/favorites/Favorites'
 import { useState } from 'react'
 
-export const Category = ({ selected }) => {
-  const [filter, setFilter] = useState()
+//export const Category = ({ selected, handlePageSelect, showView }) => {
+export const Category = ({ selected, setLoading, display }) => {
+  const [filter, setFilter] = useState([])
   const [chosen, setChosen] = useState(0)
   const handleButtonClick = (index) => {
     setChosen(index)
@@ -31,6 +32,7 @@ export const Category = ({ selected }) => {
             filter={filter}
             chosen={chosen}
             handleButtonClick={handleButtonClick}
+            loading={loading}
           />
         ) : null}
         {selected === 1 ? (
@@ -38,8 +40,22 @@ export const Category = ({ selected }) => {
             filter={filter}
             chosen={chosen}
             handleButtonClick={handleButtonClick}
+            SetLoading={setLoading}
+            display={display}
           />
-        ) : null}
+        ) : (
+          []
+        )}
+        {/*selected === 1 ? (
+          <MealFinder
+            filter={filter}
+            chosen={chosen}
+            handleButtonClick={handleButtonClick}
+            handlePageSelect={handlePageSelect}
+            showView={showView}
+            loading ={loading}
+          />
+        ) : null*/}
         {selected === 2 ? (
           <Activities
             filter={filter}
@@ -52,8 +68,19 @@ export const Category = ({ selected }) => {
             filter={filter}
             chosen={chosen}
             handleButtonClick={handleButtonClick}
+            setLoading={setLoading}
+            display={display}
           />
         ) : null}
+        {/*selected === 3 ? (
+          <Communities
+            filter={filter}
+            chosen={chosen}
+            handleButtonClick={handleButtonClick}
+            handlePageSelect={handlePageSelect}
+            showView={showView}
+          />
+        ) : null*/}
         {selected === 4 ? <Favorites /> : null}
       </>
     </nav>

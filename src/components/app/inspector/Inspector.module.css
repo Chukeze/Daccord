@@ -1,0 +1,75 @@
+.inspector {
+  background-color: rgba(44,47,72,1);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+}
+.inspector__ulitity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+}
+.inspector__ulitity > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+.inspector__ulitity > ul li {
+  list-style: none;
+  height: 50px;
+}
+.inspector__ulitity > ul li a {
+  text-decoration: none;
+  color: transparent;
+}
+.inspector__ulitity > ul li a > img {
+  width: 100%;
+  height: 100%;
+}
+.image_bg {
+  background-image: url(../../../assets/images/icons/rings.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 175px;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image_bg > .image {
+  height: 95px;
+  width: 95px;
+  margin-right: 15px;
+}
+
+.user_info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.name {
+  margin: 0;
+  line-height: 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}
+.tag {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.33);
+  line-height: 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}

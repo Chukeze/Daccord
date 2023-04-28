@@ -5,16 +5,19 @@ import {
   grocery,
 } from '../../../../../../assets/images/icons/icons'
 import CategoryCSS from '../../../category/Category.module.css'
-export const MealFinder = ({handleButtonClick, chosen}) => {
+//export const MealFinder = ({ handleButtonClick, chosen, handlePageSelect, showView }) => {
+export const MealFinder = ({ handleButtonClick, chosen, setLoading, display }) => {
   return (
     <>
-      <h1>Meal Finder</h1>
+      <h1>Finder</h1>
       <ul>
         <li
           className={`${CategoryCSS.categorylist} ${
             chosen === 0 ? `${CategoryCSS.selected}` : ''
           } `}
-          onClick={() => handleButtonClick(0)}
+          onClick={() => {
+            handleButtonClick(0)
+          }}
         >
           <button>
             <img src={restaurant} alt="" className={CategoryCSS.icon} />
@@ -25,7 +28,9 @@ export const MealFinder = ({handleButtonClick, chosen}) => {
           className={`${CategoryCSS.categorylist} ${
             chosen === 1 ? `${CategoryCSS.selected}` : ''
           } `}
-          onClick={() => handleButtonClick(1)}
+          onClick={() => {
+            handleButtonClick(1)
+          }}
         >
           <button>
             <img src={fastfood} alt="Restaurant" className={CategoryCSS.icon} />
@@ -53,6 +58,21 @@ export const MealFinder = ({handleButtonClick, chosen}) => {
             <img src={grocery} alt="" className={CategoryCSS.icon} />
             Groceries
           </button>
+        </li>
+        <li
+          className={`${CategoryCSS.categorylist} ${
+            chosen === 4 ? `${CategoryCSS.selected}` : ''
+          } `}
+          onClick={() => {
+            handleButtonClick(4)
+            setLoading(false)
+            display(1)
+            console.log('hit meal finder nav action display google map')
+            //handlePageSelect(4)
+            //showView(true)
+          }}
+        >
+          <button>Non-Food Activities</button>
         </li>
       </ul>
     </>

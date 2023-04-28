@@ -9,7 +9,23 @@ import {
   game,
   tech,
 } from '../../../../../../assets/images/icons/icons'
-export const Communities = ({chosen, filter, handleButtonClick}) => {
+
+import { Content } from '../../../../content/Content'
+import { useState } from 'react'
+/*export const Communities = ({
+  chosen,
+  filter,
+  handleButtonClick,
+  handlePageSelect,
+  showView
+}) => {*/
+export const Communities = ({
+  chosen,
+  filter,
+  handleButtonClick,
+  setLoading,
+  display,
+}) => {
   return (
     <>
       <h1>Communities</h1>
@@ -18,7 +34,14 @@ export const Communities = ({chosen, filter, handleButtonClick}) => {
           className={`${CategoryCSS.categorylist} ${
             chosen === 0 ? `${CategoryCSS.selected}` : ''
           } `}
-          onClick={() => handleButtonClick(0)}
+          onClick={() => {
+            handleButtonClick(0)
+            //handlePageSelect(0)
+            //showView(true)
+            setLoading(false)
+            display(92)
+            console.log('hit communities nav action display home community')
+          }}
         >
           <img src={home} alt="" id={CommunitiesCSS.home} />
           <button>Home</button>

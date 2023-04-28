@@ -26,7 +26,13 @@ import actiongames from './actiongames.png';
 import adventuregames from './adventure.png';
 import activities from './activities.png';
 import members from './member.png';
-import membersactivity from './activitylist.png'
+import membersactivity from './activitylist.png';
+import rings from './rings.png';
+import chat from './icon_Chat.png';
+import notification from './Bell.png';
+import mail from './Mail.png';
+import setting from './Settings.png';
+import totalmembericon from './membersymbol.png';
 
 export {
     home,
@@ -57,5 +63,11 @@ export {
     adventuregames,
     members,
     membersactivity,
-    activities
+    activities,
+    rings,
+    chat,
+    notification,
+    mail,
+    setting,
+    totalmembericon,
 }
